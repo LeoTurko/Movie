@@ -171,7 +171,7 @@ extension MovieQuizViewController {
       message: result.text,
       preferredStyle: .alert)
     
-    let action = UIAlertAction(title: "Сыграть еще раз?", style: .default) {  [weak self] _ in
+    let action = UIAlertAction(title: "Сыграть еще раз?", style: .default) { [weak self] _ in
       guard let self else { return }
       
       self.currentQuestionIndex = 0
